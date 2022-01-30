@@ -1,0 +1,32 @@
+{
+  "name": "@teleskop150750/stylelint-config-css",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Валентин Степанов <teleskop15075@gmail.com> (https://github.com/teleskop150750)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0"
+  },
+  "dependencies": {
+    "stylelint-color-format": "^1.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-prettier": "^2.0.0",
+    "stylelint-semantic-groups": "^1.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0"
+  }
+}

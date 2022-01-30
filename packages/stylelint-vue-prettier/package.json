@@ -1,0 +1,29 @@
+{
+  "name": "@teleskop150750/stylelint-config-vue",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "author": "Валентин Степанов <teleskop15075@gmail.com> (https://github.com/teleskop150750)",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "postcss-html": "^1.3.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0"
+  },
+  "dependencies": {
+    "@teleskop150750/stylelint-config-css": "^0.0.0",
+    "stylelint-config-html": "^1.0.0"
+  },
+  "devDependencies": {
+    "postcss-html": "^1.3.0",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.3.0"
+  }
+}
