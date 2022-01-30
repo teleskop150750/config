@@ -1,3 +1,17 @@
 {
-  "extends": ["@teleskop150750/eslint-config-vue"]
+  "extends": ["@teleskop150750/eslint-config-vue"],
+  "rules": {
+    "vue/html-self-closing": [
+      "error",
+      {
+        "html": {
+          "void": "never",
+          "normal": "never",
+          "component": "always"
+        },
+        "svg": "always",
+        "math": "always"
+      }
+    ]
+  }
 }

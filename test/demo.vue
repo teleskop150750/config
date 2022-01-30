@@ -3,11 +3,11 @@ interface Properties {
   type?: 'button' | 'reset' | 'submit';
 }
 
-const a: any = 5;
+const a: Properties = { type: 'button' };
 </script>
 
 <template>
-  <button class="button"><slot /></button>
+  <button class="button">text</button>
 </template>
 
 <style>

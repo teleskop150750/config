@@ -1,3 +1,4 @@
 {
-  "extends": "@teleskop150750/tsconfig"
+  "extends": "./node_modules/@teleskop150750/tsconfig/tsconfig.json",
+  "include": ["test/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
 }
