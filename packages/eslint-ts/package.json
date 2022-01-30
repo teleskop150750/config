@@ -1,6 +1,6 @@
 {
   "name": "@teleskop150750/eslint-config-ts",
-  "version": "0.0.4",
+  "version": "0.0.15",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -17,12 +17,12 @@
     "typescript": "^4.5.5"
   },
   "dependencies": {
-    "@teleskop150750/eslint-config-js": "^0.0.4",
+    "@teleskop150750/eslint-config-js": "^0.0.15",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
     "@typescript-eslint/parser": "^5.9.1"
   },
   "devDependencies": {
     "eslint": "^8.7.0"
   },
-  "gitHead": "6cafea8360563e3abb4f71d9cfdaade680a8e51b"
+  "gitHead": "0dabe654598b2d4adf12eac37dfa5a92ab0e3897"
 }

@@ -1,6 +1,6 @@
 {
   "name": "@teleskop150750/eslint-config-vue",
-  "version": "0.0.4",
+  "version": "0.0.15",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -18,7 +18,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@teleskop150750/eslint-config-ts": "^0.0.4",
+    "@teleskop150750/eslint-config-ts": "^0.0.15",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.3.0"
@@ -27,5 +27,5 @@
     "eslint": "^8.7.0",
     "prettier": "^2.5.1"
   },
-  "gitHead": "6cafea8360563e3abb4f71d9cfdaade680a8e51b"
+  "gitHead": "0dabe654598b2d4adf12eac37dfa5a92ab0e3897"
 }
