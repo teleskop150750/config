@@ -5,7 +5,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.16](https://github.com/teleskop150750/config/compare/v0.0.4...v0.0.16) (2022-01-30)
 
-**Note:** Version bump only for package @teleskop150750/eslint-config-vue
+**Note:** Version bump only for package @teleskop150750/eslint-config-vue-prettier
 
 
 
@@ -13,7 +13,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.4](https://github.com/teleskop150750/config/compare/v0.0.3...v0.0.4) (2022-01-30)
 
-**Note:** Version bump only for package @teleskop150750/eslint-config-vue
+**Note:** Version bump only for package @teleskop150750/eslint-config-vue-prettier
 
 
 
@@ -21,7 +21,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.3](https://github.com/teleskop150750/config/compare/v0.0.2...v0.0.3) (2022-01-30)
 
-**Note:** Version bump only for package @teleskop150750/eslint-config-vue
+**Note:** Version bump only for package @teleskop150750/eslint-config-vue-prettier
 
 
 
@@ -29,7 +29,7 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [0.0.2](https://github.com/teleskop150750/config/compare/v0.0.1...v0.0.2) (2022-01-30)
 
-**Note:** Version bump only for package @teleskop150750/eslint-config-vue
+**Note:** Version bump only for package @teleskop150750/eslint-config-vue-prettier
 
 
 
@@ -37,4 +37,4 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## 0.0.1 (2022-01-30)
 
-**Note:** Version bump only for package @teleskop150750/eslint-config-vue
+**Note:** Version bump only for package @teleskop150750/eslint-config-vue-prettier

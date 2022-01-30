@@ -15,7 +15,7 @@
     "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
-    "@teleskop150750/eslint-config-vue": "workspace:*",
+    "@teleskop150750/eslint-config-vue-prettier": "workspace:*",
     "@teleskop150750/prettier-config": "workspace:*",
     "@teleskop150750/stylelint-config-css": "workspace:*",
     "@teleskop150750/stylelint-config-vue": "workspace:*",
