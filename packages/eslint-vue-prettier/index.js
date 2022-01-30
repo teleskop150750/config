@@ -18,6 +18,7 @@ module.exports = {
   extends: ['plugin:vue/vue3-recommended', '@teleskop150750/eslint-config-ts', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    'import/import/first': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
