@@ -4,6 +4,9 @@ importers:
 
   .:
     specifiers:
+      '@sindresorhus/tsconfig': ^2.0.0
+      '@teleskop150750/eslint-config-js': workspace:*
+      '@teleskop150750/eslint-config-ts': workspace:*
       '@teleskop150750/eslint-config-vue-prettier': workspace:*
       '@teleskop150750/prettier-config': workspace:*
       '@teleskop150750/stylelint-config-css': workspace:*
@@ -17,6 +20,9 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
+      '@sindresorhus/tsconfig': registry.npmjs.org/@sindresorhus/tsconfig/2.0.0
+      '@teleskop150750/eslint-config-js': link:packages/eslint-js
+      '@teleskop150750/eslint-config-ts': link:packages/eslint-ts
       '@teleskop150750/eslint-config-vue-prettier': link:packages/eslint-vue-prettier
       '@teleskop150750/prettier-config': link:packages/prettier-config
       '@teleskop150750/stylelint-config-css': link:packages/stylelint-css
@@ -63,7 +69,7 @@ importers:
 
   packages/eslint-ts:
     specifiers:
-      '@teleskop150750/eslint-config-js': ^0.0.17
+      '@teleskop150750/eslint-config-js': ^0.0.22
       '@typescript-eslint/eslint-plugin': ^5.9.1
       '@typescript-eslint/parser': ^5.9.1
       eslint: ^8.7.0
@@ -76,7 +82,7 @@ importers:
 
   packages/eslint-vue-prettier:
     specifiers:
-      '@teleskop150750/eslint-config-ts': ^0.0.17
+      '@teleskop150750/eslint-config-ts': ^0.0.22
       eslint: ^8.7.0
       eslint-config-prettier: ^8.3.0
       eslint-plugin-prettier: ^4.0.0
@@ -99,37 +105,35 @@ importers:
 
   packages/stylelint-css:
     specifiers:
-      prettier: ^2.5.1
       stylelint: ^14.3.0
       stylelint-color-format: ^1.1.0
-      stylelint-config-prettier: ^9.0.3
       stylelint-config-standard: ^24.0.0
       stylelint-declaration-block-no-ignored-properties: ^2.5.0
       stylelint-order: ^5.0.0
-      stylelint-prettier: ^2.0.0
       stylelint-semantic-groups: ^1.1.2
     dependencies:
       stylelint-color-format: registry.npmjs.org/stylelint-color-format/1.1.0_stylelint@14.3.0
-      stylelint-config-prettier: registry.npmjs.org/stylelint-config-prettier/9.0.3_stylelint@14.3.0
       stylelint-config-standard: registry.npmjs.org/stylelint-config-standard/24.0.0_stylelint@14.3.0
       stylelint-declaration-block-no-ignored-properties: registry.npmjs.org/stylelint-declaration-block-no-ignored-properties/2.5.0_stylelint@14.3.0
       stylelint-order: registry.npmjs.org/stylelint-order/5.0.0_stylelint@14.3.0
-      stylelint-prettier: registry.npmjs.org/stylelint-prettier/2.0.0_prettier@2.5.1+stylelint@14.3.0
       stylelint-semantic-groups: registry.npmjs.org/stylelint-semantic-groups/1.1.2
     devDependencies:
-      prettier: registry.npmjs.org/prettier/2.5.1
       stylelint: registry.npmjs.org/stylelint/14.3.0
 
   packages/stylelint-vue-prettier:
     specifiers:
-      '@teleskop150750/stylelint-config-css': ^0.0.17
+      '@teleskop150750/stylelint-config-css': ^0.0.22
       postcss-html: ^1.3.0
       prettier: ^2.5.1
       stylelint: ^14.3.0
       stylelint-config-html: ^1.0.0
+      stylelint-config-prettier: ^9.0.3
+      stylelint-prettier: ^2.0.0
     dependencies:
       '@teleskop150750/stylelint-config-css': link:../stylelint-css
       stylelint-config-html: registry.npmjs.org/stylelint-config-html/1.0.0_387acde72b94c028532b3c9cd4a4cddd
+      stylelint-config-prettier: registry.npmjs.org/stylelint-config-prettier/9.0.3_stylelint@14.3.0
+      stylelint-prettier: registry.npmjs.org/stylelint-prettier/2.0.0_prettier@2.5.1+stylelint@14.3.0
     devDependencies:
       postcss-html: registry.npmjs.org/postcss-html/1.3.0
       prettier: registry.npmjs.org/prettier/2.5.1
@@ -1265,6 +1269,13 @@ packages:
     version: 6.34.0
     dependencies:
       '@octokit/openapi-types': registry.npmjs.org/@octokit/openapi-types/11.2.0
+    dev: true
+
+  registry.npmjs.org/@sindresorhus/tsconfig/2.0.0:
+    resolution: {integrity: sha512-1nsyWtFtPpVjEnNzp2rd03BVz84BYHeW7LNYvmcj3q4jAgJL2hl0XBp3WmDFFPjFLF3w+L0XEYqhjWUTU+TCzw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@sindresorhus/tsconfig/-/tsconfig-2.0.0.tgz}
+    name: '@sindresorhus/tsconfig'
+    version: 2.0.0
+    engines: {node: '>=12'}
     dev: true
 
   registry.npmjs.org/@tootallnate/once/1.1.2:

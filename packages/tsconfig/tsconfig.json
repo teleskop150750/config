@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
     "importHelpers": true,
     "target": "ESNext",
     "module": "ESNext",

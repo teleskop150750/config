@@ -5,11 +5,9 @@ module.exports = {
     'stylelint-order',
     'stylelint-color-format',
     'stylelint-declaration-block-no-ignored-properties',
-    'stylelint-prettier',
   ],
-  extends: ['stylelint-config-standard', 'stylelint-prettier/recommended', 'stylelint-config-prettier'],
+  extends: ['stylelint-config-standard'],
   rules: {
-    'prettier/prettier': true,
     'color-format/format': {
       format: 'hsl',
     },

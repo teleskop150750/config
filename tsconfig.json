@@ -1,4 +1,9 @@
 {
-  "extends": "./node_modules/@teleskop150750/tsconfig/tsconfig.json",
+  "extends": "@teleskop150750/tsconfig/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    // "rootDir": "./test",
+    "outDir": "dist2"
+  },
   "include": ["test/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
 }

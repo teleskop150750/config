@@ -5,9 +5,10 @@
   "author": "Валентин Степанов <teleskop150750@gmail.com> (https://github.com/teleskop150750/)",
   "private": true,
   "scripts": {
+    "run": "tsc --watch",
     "preinstall": "npx only-allow pnpm",
-    "eslint": "eslint \"test/**/*.{vue,ts,js}\"",
-    "eslint:fix": "eslint \"test/**/*.{vue,ts,js}\" --fix",
+    "eslint": "eslint \"test/**/*.{vue,ts,js,json}\"",
+    "eslint:fix": "eslint \"test/**/*.{vue,ts,js,json}\" --fix",
     "stylelint": "stylelint \"test/**/*.{vue,css}\"",
     "stylelint:fix": "stylelint \"test/**/*.{vue,css}\" --fix",
     "prettier": "prettier --check --ignore-unknown \"test/**/*\"",
@@ -15,6 +16,9 @@
     "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
+    "@sindresorhus/tsconfig": "^2.0.0",
+    "@teleskop150750/eslint-config-js": "workspace:*",
+    "@teleskop150750/eslint-config-ts": "workspace:*",
     "@teleskop150750/eslint-config-vue-prettier": "workspace:*",
     "@teleskop150750/prettier-config": "workspace:*",
     "@teleskop150750/stylelint-config-css": "workspace:*",

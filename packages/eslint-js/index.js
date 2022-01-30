@@ -1,5 +1,6 @@
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
@@ -14,18 +15,20 @@ module.exports = {
     'standard',
     'airbnb-base',
     'plugin:eslint-comments/recommended',
-    'plugin:import/recommended',
     'plugin:jsonc/recommended-with-jsonc',
     'plugin:yml/standard',
     'plugin:unicorn/recommended',
   ],
   rules: {
-    'unicorn/prefer-module': 'off',
+    // Предпочитайте модули JavaScript (ESM) CommonJS
+    // 'unicorn/prefer-module': 'off',
+    // Предпочитайте использовать протокол при импорте встроенных модулей Node.js node
     'unicorn/prefer-node-protocol': 'off',
     'unicorn/no-array-for-each': 'off',
     'unicorn/filename-case': 'off',
     'unicorn/no-null': 'off',
     'import/prefer-default-export': 'off',
+    // требовать комментарий к каждому комментарии к eslint-enable eslint-disable
     'eslint-comments/disable-enable-pair': 'off',
   },
   settings: {
@@ -98,12 +101,6 @@ module.exports = {
       files: ['*.js'],
       rules: {
         '@typescript-eslint/no-var-requires': 'off',
-      },
-    },
-    {
-      files: ['scripts/**/*.*'],
-      rules: {
-        'no-console': 'off',
       },
     },
     {
