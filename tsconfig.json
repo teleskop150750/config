@@ -3,7 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     // "rootDir": "./test",
-    "outDir": "dist2"
+    "outDir": "dist"
   },
   "include": ["test/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"]
 }

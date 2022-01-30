@@ -4,7 +4,6 @@ importers:
 
   .:
     specifiers:
-      '@sindresorhus/tsconfig': ^2.0.0
       '@teleskop150750/eslint-config-js': workspace:*
       '@teleskop150750/eslint-config-ts': workspace:*
       '@teleskop150750/eslint-config-vue-prettier': workspace:*
@@ -20,7 +19,6 @@ importers:
       tslib: ^2.3.1
       typescript: ^4.5.5
     devDependencies:
-      '@sindresorhus/tsconfig': registry.npmjs.org/@sindresorhus/tsconfig/2.0.0
       '@teleskop150750/eslint-config-js': link:packages/eslint-js
       '@teleskop150750/eslint-config-ts': link:packages/eslint-ts
       '@teleskop150750/eslint-config-vue-prettier': link:packages/eslint-vue-prettier
@@ -1269,13 +1267,6 @@ packages:
     version: 6.34.0
     dependencies:
       '@octokit/openapi-types': registry.npmjs.org/@octokit/openapi-types/11.2.0
-    dev: true
-
-  registry.npmjs.org/@sindresorhus/tsconfig/2.0.0:
-    resolution: {integrity: sha512-1nsyWtFtPpVjEnNzp2rd03BVz84BYHeW7LNYvmcj3q4jAgJL2hl0XBp3WmDFFPjFLF3w+L0XEYqhjWUTU+TCzw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@sindresorhus/tsconfig/-/tsconfig-2.0.0.tgz}
-    name: '@sindresorhus/tsconfig'
-    version: 2.0.0
-    engines: {node: '>=12'}
     dev: true
 
   registry.npmjs.org/@tootallnate/once/1.1.2:

@@ -16,7 +16,6 @@
     "release": "lerna publish --conventional-commits"
   },
   "devDependencies": {
-    "@sindresorhus/tsconfig": "^2.0.0",
     "@teleskop150750/eslint-config-js": "workspace:*",
     "@teleskop150750/eslint-config-ts": "workspace:*",
     "@teleskop150750/eslint-config-vue-prettier": "workspace:*",
