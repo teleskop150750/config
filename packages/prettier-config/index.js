@@ -1,8 +1,16 @@
 module.exports = {
-     printWidth: 120,
-     tabWidth: 2,
-     useTabs: false,
-     semi: true,
-     singleQuote: true,
-     trailingComma: 'all',
+  printWidth: 120,
+  tabWidth: 2,
+  useTabs: false,
+  semi: true,
+  singleQuote: true,
+  trailingComma: 'all',
+  overrides: [
+    {
+      files: '*.ts',
+      options: {
+        parser: 'typescript',
+      },
+    },
+  ],
 };
