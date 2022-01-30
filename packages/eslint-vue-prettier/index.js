@@ -35,6 +35,9 @@ module.exports = {
   extends: ['plugin:vue/vue3-recommended', '@teleskop150750/eslint-config-ts', 'prettier'],
   rules: {
     'prettier/prettier': 'error',
+    // импорт без расширения
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
     // Запретить использование посторонних пакетов
     'import/no-extraneous-dependencies': 'off',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
