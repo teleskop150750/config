@@ -1,6 +1,6 @@
 {
   "name": "@teleskop150750/stylelint-config-vue-prettier",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "description": "",
   "keywords": [],
   "license": "MIT",
@@ -17,7 +17,7 @@
     "stylelint": "^14.3.0"
   },
   "dependencies": {
-    "@teleskop150750/stylelint-config-css": "^0.0.25",
+    "@teleskop150750/stylelint-config-css": "^0.0.26",
     "postcss-html": "^1.3.0",
     "stylelint-config-html": "^1.0.0",
     "stylelint-config-prettier": "^9.0.3",
