@@ -7,7 +7,7 @@ const a: Properties = { type: 'button' };
 </script>
 
 <template>
-  <button class="button">text</button>
+  <button class="button">text {{ a }}</button>
 </template>
 
 <style>

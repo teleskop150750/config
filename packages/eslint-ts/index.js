@@ -3,19 +3,10 @@ const js = require('@teleskop150750/eslint-config-js');
 
 // eslint-disable-next-line unicorn/prefer-module
 module.exports = {
-  root: js.root,
   extends: [
     '@teleskop150750/eslint-config-js',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-  ],
-  overrides: [
-    ...js.overrides,
-    {
-      files: ['*.ts'],
-      parser: '@typescript-eslint/parser',
-      plugins: ['@typescript-eslint'],
-    },
   ],
   rules: {
     // TS
@@ -76,4 +67,24 @@ module.exports = {
     // Запрещает использование определенных типов (ban-types) Number String
     // '@typescript-eslint/no-namespace': 'off',
   },
+  overrides: [
+    ...js.overrides,
+    {
+      files: ['*.ts'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+    },
+    {
+      files: ['*.d.ts'],
+      rules: {
+        'import/no-duplicates': 'off',
+      },
+    },
+    {
+      files: ['*.js'],
+      rules: {
+        '@typescript-eslint/no-var-requires': 'off',
+      },
+    },
+  ],
 };

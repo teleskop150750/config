@@ -67,14 +67,18 @@ importers:
 
   packages/eslint-ts:
     specifiers:
-      '@teleskop150750/eslint-config-js': ^0.0.22
+      '@teleskop150750/eslint-config-js': ^0.0.26
+      '@types/node': ^17.0.14
       '@typescript-eslint/eslint-plugin': ^5.9.1
       '@typescript-eslint/parser': ^5.9.1
       eslint: ^8.7.0
+      tslib: ^2.3.1
     dependencies:
       '@teleskop150750/eslint-config-js': link:../eslint-js
+      '@types/node': registry.npmjs.org/@types/node/17.0.14
       '@typescript-eslint/eslint-plugin': registry.npmjs.org/@typescript-eslint/eslint-plugin/5.10.1_5bb2413551d07429e4087fb9ca3ae3ea
       '@typescript-eslint/parser': registry.npmjs.org/@typescript-eslint/parser/5.10.1_eslint@8.8.0+typescript@4.5.5
+      tslib: registry.npmjs.org/tslib/2.3.1
     devDependencies:
       eslint: registry.npmjs.org/eslint/8.8.0
 
@@ -180,7 +184,7 @@ packages:
       ajv: registry.npmjs.org/ajv/6.12.6
       debug: registry.npmjs.org/debug/4.3.3
       espree: registry.npmjs.org/espree/9.3.0
-      globals: registry.npmjs.org/globals/13.12.0
+      globals: registry.npmjs.org/globals/13.12.1
       ignore: registry.npmjs.org/ignore/4.0.6
       import-fresh: registry.npmjs.org/import-fresh/3.3.0
       js-yaml: registry.npmjs.org/js-yaml/4.1.0
@@ -632,7 +636,7 @@ packages:
     dependencies:
       '@lerna/query-graph': registry.npmjs.org/@lerna/query-graph/4.0.0
       chalk: registry.npmjs.org/chalk/4.1.2
-      columnify: registry.npmjs.org/columnify/1.5.4
+      columnify: registry.npmjs.org/columnify/1.6.0
     dev: true
 
   registry.npmjs.org/@lerna/log-packed/4.0.0:
@@ -642,7 +646,7 @@ packages:
     engines: {node: '>= 10.18.0'}
     dependencies:
       byte-size: registry.npmjs.org/byte-size/7.0.1
-      columnify: registry.npmjs.org/columnify/1.5.4
+      columnify: registry.npmjs.org/columnify/1.6.0
       has-unicode: registry.npmjs.org/has-unicode/2.0.1
       npmlog: registry.npmjs.org/npmlog/4.1.2
     dev: true
@@ -682,7 +686,7 @@ packages:
       fs-extra: registry.npmjs.org/fs-extra/9.1.0
       npm-package-arg: registry.npmjs.org/npm-package-arg/8.1.5
       npmlog: registry.npmjs.org/npmlog/4.1.2
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
       write-pkg: registry.npmjs.org/write-pkg/4.0.0
     dev: true
 
@@ -1299,6 +1303,12 @@ packages:
     name: '@types/minimist'
     version: 1.2.2
     dev: true
+
+  registry.npmjs.org/@types/node/17.0.14:
+    resolution: {integrity: sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/node/-/node-17.0.14.tgz}
+    name: '@types/node'
+    version: 17.0.14
+    dev: false
 
   registry.npmjs.org/@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz}
@@ -2055,12 +2065,13 @@ packages:
     version: 2.9.2
     dev: true
 
-  registry.npmjs.org/columnify/1.5.4:
-    resolution: {integrity: sha1-Rzfd8ce2mop8NAVweC6UfuyOeLs=, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/columnify/-/columnify-1.5.4.tgz}
+  registry.npmjs.org/columnify/1.6.0:
+    resolution: {integrity: sha512-lomjuFZKfM6MSAnV9aCZC9sc0qGbmZdfygNv+nCpqVkSKdCxCklLtd16O0EILGkImHw9ZpHkAnHaB+8Zxq5W6Q==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/columnify/-/columnify-1.6.0.tgz}
     name: columnify
-    version: 1.5.4
+    version: 1.6.0
+    engines: {node: '>=8.0.0'}
     dependencies:
-      strip-ansi: registry.npmjs.org/strip-ansi/3.0.1
+      strip-ansi: registry.npmjs.org/strip-ansi/6.0.1
       wcwidth: registry.npmjs.org/wcwidth/1.0.1
     dev: true
 
@@ -2962,7 +2973,7 @@ packages:
       file-entry-cache: registry.npmjs.org/file-entry-cache/6.0.1
       functional-red-black-tree: registry.npmjs.org/functional-red-black-tree/1.0.1
       glob-parent: registry.npmjs.org/glob-parent/6.0.2
-      globals: registry.npmjs.org/globals/13.12.0
+      globals: registry.npmjs.org/globals/13.12.1
       ignore: registry.npmjs.org/ignore/5.2.0
       import-fresh: registry.npmjs.org/import-fresh/3.3.0
       imurmurhash: registry.npmjs.org/imurmurhash/0.1.4
@@ -3047,7 +3058,7 @@ packages:
       merge-stream: registry.npmjs.org/merge-stream/2.0.0
       npm-run-path: registry.npmjs.org/npm-run-path/4.0.1
       onetime: registry.npmjs.org/onetime/5.1.2
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
       strip-final-newline: registry.npmjs.org/strip-final-newline/2.0.0
     dev: true
 
@@ -3270,7 +3281,7 @@ packages:
       console-control-strings: registry.npmjs.org/console-control-strings/1.1.0
       has-unicode: registry.npmjs.org/has-unicode/2.0.1
       object-assign: registry.npmjs.org/object-assign/4.1.1
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
       string-width: registry.npmjs.org/string-width/1.0.2
       strip-ansi: registry.npmjs.org/strip-ansi/3.0.1
       wide-align: registry.npmjs.org/wide-align/1.1.5
@@ -3453,10 +3464,10 @@ packages:
       which: registry.npmjs.org/which/1.3.1
     dev: true
 
-  registry.npmjs.org/globals/13.12.0:
-    resolution: {integrity: sha512-uS8X6lSKN2JumVoXrbUz+uG4BYG+eiawqm3qFcT7ammfbUHeCBoJMlHcec/S3krSk73/AE/f0szYFmgAA3kYZg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/globals/-/globals-13.12.0.tgz}
+  registry.npmjs.org/globals/13.12.1:
+    resolution: {integrity: sha512-317dFlgY2pdJZ9rspXDks7073GpDmXdfbM3vYYp0HAMKGDh1FfWPleI2ljVNLQX5M5lXcAslTcPTrOrMEFOjyw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/globals/-/globals-13.12.1.tgz}
     name: globals
-    version: 13.12.0
+    version: 13.12.1
     engines: {node: '>=8'}
     dependencies:
       type-fest: registry.npmjs.org/type-fest/0.20.2
@@ -5439,8 +5450,8 @@ packages:
     engines: {node: ^12 || >=14}
     dependencies:
       htmlparser2: registry.npmjs.org/htmlparser2/7.2.0
-      postcss: registry.npmjs.org/postcss/8.4.5
-      postcss-safe-parser: registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.5
+      postcss: registry.npmjs.org/postcss/8.4.6
+      postcss-safe-parser: registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.6
 
   registry.npmjs.org/postcss-media-query-parser/0.2.3:
     resolution: {integrity: sha1-J7Ocb02U+Bsac7j3Y1HGCeXO8kQ=, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss-media-query-parser/-/postcss-media-query-parser-0.2.3.tgz}
@@ -5454,7 +5465,7 @@ packages:
     version: 0.1.1
     dev: true
 
-  registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.5:
+  registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.6:
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss-safe-parser/-/postcss-safe-parser-6.0.0.tgz}
     id: registry.npmjs.org/postcss-safe-parser/6.0.0
     name: postcss-safe-parser
@@ -5463,7 +5474,7 @@ packages:
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: registry.npmjs.org/postcss/8.4.5
+      postcss: registry.npmjs.org/postcss/8.4.6
 
   registry.npmjs.org/postcss-selector-parser/6.0.9:
     resolution: {integrity: sha512-UO3SgnZOVTwu4kyLR22UQ1xZh086RyNZppb7lLAKBFK8a32ttG5i87Y/P3+2bRSjZNyJ1B7hfFNo273tKe9YxQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss-selector-parser/-/postcss-selector-parser-6.0.9.tgz}
@@ -5496,6 +5507,17 @@ packages:
     resolution: {integrity: sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss/-/postcss-8.4.5.tgz}
     name: postcss
     version: 8.4.5
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: registry.npmjs.org/nanoid/3.2.0
+      picocolors: registry.npmjs.org/picocolors/1.0.0
+      source-map-js: registry.npmjs.org/source-map-js/1.0.2
+    dev: false
+
+  registry.npmjs.org/postcss/8.4.6:
+    resolution: {integrity: sha512-OovjwIzs9Te46vlEx7+uXB0PLijpwjXGKXjVGGPIGubGpq7uh5Xgf6D6FiJ/SzJMBosHDp6a2hiXOS97iBXcaA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/postcss/-/postcss-8.4.6.tgz}
+    name: postcss
+    version: 8.4.6
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: registry.npmjs.org/nanoid/3.2.0
@@ -5883,7 +5905,7 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       onetime: registry.npmjs.org/onetime/5.1.2
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
     dev: true
 
   registry.npmjs.org/retry/0.12.0:
@@ -6027,10 +6049,10 @@ packages:
       get-intrinsic: registry.npmjs.org/get-intrinsic/1.1.1
       object-inspect: registry.npmjs.org/object-inspect/1.12.0
 
-  registry.npmjs.org/signal-exit/3.0.6:
-    resolution: {integrity: sha512-sDl4qMFpijcGw22U5w63KmD3cZJfBuFlVNbVMKje2keoKML7X2UzWbc4XrmEbDwg0NXJc3yv4/ox7b+JWb57kQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.6.tgz}
+  registry.npmjs.org/signal-exit/3.0.7:
+    resolution: {integrity: sha512-wnD2ZE+l+SPC/uoS0vXeE9L1+0wuaMqKlfz9AMUo38JsyLSBWSFcHR1Rri62LZc12vLr1gb3jl7iwQhgwpAbGQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz}
     name: signal-exit
-    version: 3.0.6
+    version: 3.0.7
     dev: true
 
   registry.npmjs.org/simple-swizzle/0.2.2:
@@ -6496,10 +6518,10 @@ packages:
       normalize-path: registry.npmjs.org/normalize-path/3.0.0
       normalize-selector: registry.npmjs.org/normalize-selector/0.2.0
       picocolors: registry.npmjs.org/picocolors/1.0.0
-      postcss: registry.npmjs.org/postcss/8.4.5
+      postcss: registry.npmjs.org/postcss/8.4.6
       postcss-media-query-parser: registry.npmjs.org/postcss-media-query-parser/0.2.3
       postcss-resolve-nested-selector: registry.npmjs.org/postcss-resolve-nested-selector/0.1.1
-      postcss-safe-parser: registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.5
+      postcss-safe-parser: registry.npmjs.org/postcss-safe-parser/6.0.0_postcss@8.4.6
       postcss-selector-parser: registry.npmjs.org/postcss-selector-parser/6.0.9
       postcss-value-parser: registry.npmjs.org/postcss-value-parser/4.2.0
       resolve-from: registry.npmjs.org/resolve-from/5.0.0
@@ -7095,7 +7117,7 @@ packages:
     dependencies:
       graceful-fs: registry.npmjs.org/graceful-fs/4.2.9
       imurmurhash: registry.npmjs.org/imurmurhash/0.1.4
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
     dev: true
 
   registry.npmjs.org/write-file-atomic/3.0.3:
@@ -7105,7 +7127,7 @@ packages:
     dependencies:
       imurmurhash: registry.npmjs.org/imurmurhash/0.1.4
       is-typedarray: registry.npmjs.org/is-typedarray/1.0.0
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
       typedarray-to-buffer: registry.npmjs.org/typedarray-to-buffer/3.1.5
     dev: true
 
@@ -7117,7 +7139,7 @@ packages:
     dependencies:
       imurmurhash: registry.npmjs.org/imurmurhash/0.1.4
       is-typedarray: registry.npmjs.org/is-typedarray/1.0.0
-      signal-exit: registry.npmjs.org/signal-exit/3.0.6
+      signal-exit: registry.npmjs.org/signal-exit/3.0.7
       typedarray-to-buffer: registry.npmjs.org/typedarray-to-buffer/4.0.0
     dev: true
 
