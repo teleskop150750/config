@@ -1,8 +1,7 @@
-// eslint-disable-next-line unicorn/prefer-module
 const js = require('@teleskop150750/eslint-config-js');
 
-// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
+  root: true,
   extends: [
     '@teleskop150750/eslint-config-js',
     'plugin:@typescript-eslint/eslint-recommended',

@@ -1,7 +1,7 @@
-// eslint-disable-next-line unicorn/prefer-module
 const ts = require('@teleskop150750/eslint-config-ts');
-// eslint-disable-next-line unicorn/prefer-module
+
 module.exports = {
+  root: true,
   plugins: ['vue', 'prettier'],
   extends: ['plugin:vue/vue3-recommended', '@teleskop150750/eslint-config-ts', 'prettier'],
   rules: {

@@ -1,5 +1,5 @@
-// eslint-disable-next-line unicorn/prefer-module
 module.exports = {
+  root: true,
   env: {
     browser: true,
     es2021: true,
@@ -21,7 +21,7 @@ module.exports = {
   ],
   rules: {
     // Предпочитайте модули JavaScript (ESM) CommonJS
-    // 'unicorn/prefer-module': 'off',
+    'unicorn/prefer-module': 'off',
     // Предпочитайте использовать протокол при импорте встроенных модулей Node.js node
     'unicorn/prefer-node-protocol': 'off',
     // no-array-for-each
