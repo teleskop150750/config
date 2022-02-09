@@ -1,5 +1,5 @@
 {
-  "name": "@teleskop150750/stylelint-config-vue-prettier",
+  "name": "@teleskop150750/stylelint-config-vue",
   "version": "0.0.29",
   "description": "",
   "keywords": [],
@@ -13,17 +13,14 @@
     "access": "public"
   },
   "peerDependencies": {
-    "prettier": "^2.5.1",
     "stylelint": "^14.3.0"
   },
   "dependencies": {
-    "@teleskop150750/stylelint-config-vue": "^0.0.29",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-prettier": "^2.0.0"
+    "@teleskop150750/stylelint-config-css": "^0.0.29",
+    "postcss-html": "^1.3.0",
+    "stylelint-config-html": "^1.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.5.1",
     "stylelint": "^14.3.0"
-  },
-  "gitHead": "0dabe654598b2d4adf12eac37dfa5a92ab0e3897"
+  }
 }

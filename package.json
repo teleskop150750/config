@@ -21,6 +21,7 @@
     "@teleskop150750/eslint-config-vue-prettier": "workspace:*",
     "@teleskop150750/prettier-config": "workspace:*",
     "@teleskop150750/stylelint-config-css": "workspace:*",
+    "@teleskop150750/stylelint-config-vue": "workspace:*",
     "@teleskop150750/stylelint-config-vue-prettier": "workspace:*",
     "@teleskop150750/tsconfig": "workspace:*",
     "eslint": "^8.8.0",

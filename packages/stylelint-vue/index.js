@@ -14,9 +14,5 @@ module.exports = {
       rules: {},
     },
   ],
-  plugins: ['stylelint-prettier'],
-  extends: ['@teleskop150750/stylelint-config-vue', 'stylelint-prettier/recommended', 'stylelint-config-prettier'],
-  rules: {
-    'prettier/prettier': true,
-  },
+  extends: ['@teleskop150750/stylelint-config-css', 'stylelint-config-html/vue'],
 };
